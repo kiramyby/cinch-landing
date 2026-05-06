@@ -261,6 +261,7 @@ img {
 
 .btn.block {
   width: 100%;
+  margin-inline: auto;
   justify-content: center;
 }
 
@@ -335,6 +336,8 @@ img {
 }
 
 .download-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
@@ -352,6 +355,42 @@ img {
   margin: 0 0 18px;
   color: var(--text-soft);
   font-size: 14px;
+}
+
+.download-card > :last-child {
+  margin-block: auto;
+}
+
+.download-card-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.download-card-qr > p {
+  width: 100%;
+}
+
+.qr-figure {
+  width: min(100%, 190px);
+  margin: 4px auto 0;
+  padding: 8px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.qr-figure picture,
+.qr-figure img {
+  display: block;
+  width: 100%;
+}
+
+.qr-figure img {
+  height: auto;
+  border-radius: 16px;
 }
 
 .hint {

@@ -49,7 +49,7 @@
         />
         <h1 class="hero-title">HDUHELP Cinch</h1>
         <p class="hero-tagline" data-i18n="hero.tagline">
-          杭电助手 · 一站式校园信息聚合
+          杭电助手 · APP 测试计划
         </p>
         <p class="hero-sub" data-i18n="hero.sub">
           课表 · 考试 · 成绩 · 作业截止日期
@@ -111,17 +111,16 @@
             <p data-i18n="download.ios.desc">
               通过 TestFlight 加入 Beta 测试，体验最新版本。
             </p>
-            <a
-              class="btn btn-primary block"
-              href="https://testflight.apple.com/join/XxmeUX66"
-              target="_blank"
-              rel="noopener"
-              data-i18n="download.ios.btn"
-              >前往 TestFlight</a
-            >
-            <p class="hint" data-i18n="download.ios.hint">
-              需要 iOS 16 及以上版本。
-            </p>
+            <div>
+              <a
+                class="btn btn-primary block"
+                href="https://testflight.apple.com/join/XxmeUX66"
+                target="_blank"
+                rel="noopener"
+                data-i18n="download.ios.btn"
+                >前往 TestFlight</a
+              >
+            </div>
           </article>
 
           <article class="download-card">
@@ -129,17 +128,37 @@
             <p data-i18n="download.android.desc">
               直接下载 APK 安装，请允许"未知来源"安装。
             </p>
-            <a
-              class="btn btn-secondary block"
-              href="https://hdu-help.feishu.cn/file/YaygbgjGuoZe2hxoKQgcw6bznFb"
-              target="_blank"
-              rel="noopener"
-              data-i18n="download.android.btn"
-              >下载 APK</a
-            >
-            <p class="hint" data-i18n="download.android.hint">
-              支持 Android 8.0 及以上版本。
+            <div>
+              <a
+                class="btn btn-secondary block"
+                href="https://hdu-help.feishu.cn/file/YaygbgjGuoZe2hxoKQgcw6bznFb"
+                target="_blank"
+                rel="noopener"
+                data-i18n="download.android.btn"
+                >下载 APK</a
+              >
+            </div>
+          </article>
+
+          <article class="download-card download-card-qr">
+            <h3 data-i18n="download.feedback.title">反馈群</h3>
+            <p data-i18n="download.feedback.desc">
+              扫码加入反馈群，提交Bug或功能想法。
             </p>
+            <div class="qr-figure" aria-label="反馈群二维码">
+              <picture>
+                <source
+                  srcset="./assets/react-group-dark.jpg"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <img
+                  src="./assets/react-group-light.jpg"
+                  alt="反馈群二维码"
+                  width="1156"
+                  height="2055"
+                />
+              </picture>
+            </div>
           </article>
         </div>
       </section>
